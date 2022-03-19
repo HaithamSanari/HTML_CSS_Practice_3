@@ -53,16 +53,14 @@ a {
 /* End of global rules */
 /* Start of Component */
 .main-heading {
-  padding-bottom: 70px;
   position: relative;
-}
-.main-heading h2 {
   text-align: center;
   padding: 10px 20px;
   text-transform: uppercase;
   border: 1px solid black;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 80px;
+  transition: var(--main-transition);
 }
 .main-heading h2::before {
   content: '';
@@ -71,9 +69,9 @@ a {
   height: 10px;
   background-color: var(--main-color);
   border-radius: 50%;
-  left: 42%;
-  bottom: 90px;
-  transform: translateX(-50%);
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
 }
 .main-heading h2::after {
   content: '';
@@ -82,9 +80,9 @@ a {
   height: 10px;
   background-color: var(--main-color);
   border-radius: 50%;
-  right: 41%;
-  bottom: 90px;
-  transform: translateX(-50%);
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
 }
 /* End of Component */
 /* Start Header */
@@ -252,3 +250,24 @@ article .article-content .box a::after {
   right: 15px;
   bottom: 18px;
 }
+/* Start Gallery */
+.gallery {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.gallery .img {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 40px;
+}
+.gallery .img .box {
+  border: 15px solid white;
+  box-shadow: 0px 0px 14px 3px #cecdcd;
+}
+
+.gallery .img .box img {
+  width: 100%;
+}
+
+/* End Gallery */
