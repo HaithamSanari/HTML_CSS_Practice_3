@@ -439,10 +439,9 @@ article .article-content .box a::after {
   margin-top: 50px;
 }
 .members .content .box img {
-  width:100%;
+  width: 100%;
   transition: var(--main-transition);
   border-radius: 10px;
-  
 }
 .members .content .box .text {
   padding: 20px;
@@ -469,3 +468,73 @@ article .article-content .box a::after {
   font-weight: normal;
 }
 /* End Team Members */
+/* Start Services */
+.service {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.service .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  counter-reset: item 0;
+}
+.service .content .box {
+  text-align: center;
+  background-color: white;
+  counter-increment: item;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+/* .service .content .box:hover{
+  border-top: 2px solid var(--main-color);
+} */
+.service .content .box i {
+  margin-top: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #d5d5d5;
+}
+.service .content .box h2 {
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+.service .content .box .detail {
+  text-align: right;
+  background-color: #f9f9f9;
+  padding: 15px;
+  position: relative;
+}
+.service .content .box .detail a {
+  color: var(--main-color);
+}
+.service .content .box .detail::before {
+  content: '0' counter(item);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: white;
+  /* padding: 10px 25px; */
+  font-weight: 700;
+  font-size: 30px;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  width: 70px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.service .content .box .detail::after {
+  content: '';
+  position: absolute;
+  background-color: #d5d5d5;
+  width: 50px;
+  height: 49px;
+  left: 69px;
+  bottom: 0;
+  transform: skewX(-23deg);
+}
+
+/* End Services */
