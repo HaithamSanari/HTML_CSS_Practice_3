@@ -95,7 +95,6 @@ header .container {
   align-items: center;
   position: relative;
 }
-
 header .container > a {
   font-size: 26px;
   font-weight: bold;
@@ -131,7 +130,7 @@ header .container nav ul li:hover {
     text-align: center;
   }
   header .container nav ul li {
-    padding: 10px 10px 10px 0;
+    padding: 10px 15px;
     font-size: 14px;
   }
   header .container nav ul li:hover {
@@ -161,6 +160,15 @@ header .container nav ul li:hover {
   align-items: center;
   min-height: calc(100vh - 72px);
   /* flex-wrap: wrap; */
+}
+.landing i {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--main-color);
 }
 .landing .container .text {
   /* width: 500px; */
@@ -431,6 +439,10 @@ article .article-content .box a::after {
   width: calc(100% - 90px);
   position: relative;
   margin: 0 auto;
+  /* transition: background-color 0.3s; */
+}
+.members .content .box .img:hover {
+  color: var(--section-background);
 }
 .members .content .box .img {
   position: relative;
@@ -458,10 +470,16 @@ article .article-content .box a::after {
   margin-bottom: 40px;
   color: #777777;
 }
+.members .content .box .text .icon i:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
 .members .content .box .text h2 {
   color: #2196f3;
   font-size: 22px;
   margin-bottom: 10px;
+}
+.members .content .box .text h2:hover {
 }
 .members .content .box .text h6 {
   font-size: 16px;
@@ -531,10 +549,61 @@ article .article-content .box a::after {
   position: absolute;
   background-color: #d5d5d5;
   width: 50px;
-  height: 49px;
+  height: 48px;
   left: 69px;
   bottom: 0;
   transform: skewX(-23deg);
 }
 
 /* End Services */
+/* Start Skills */
+.skills {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.skills .content {
+  display: flex;
+  align-items: center;
+}
+.skills .content img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .skills .content img {
+    display: none;
+  }
+}
+.skills .content-skill {
+  flex: 1;
+}
+.skills .content-skill .prog-holder {
+  margin-bottom: 20px;
+}
+.skills .content-skill .prog-holder h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skills .content-skill .prog-holder h4 span {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: var(--main-color);
+}
+.skills .content-skill .prog-holder .prog {
+  height: 30px;
+  background-color: #eee;
+  position: relative;
+}
+.skills .content-skill .prog-holder .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: width 0.5s linear;
+}
+
+/* End Skills */

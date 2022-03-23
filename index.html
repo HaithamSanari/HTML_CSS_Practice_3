@@ -26,13 +26,12 @@
     <!-- Start Header -->
     <header class="header" id="header">
       <div class="container">
-        <i class="fa-solid fa-down"></i>
         <a href="#">Elzero</a>
         <nav class="nav">
           <ul>
-            <li id="article"><a href="">Articles</a></li>
-            <li id="gallery"><a href="">Gallery</a></li>
-            <li id="feature"><a href="">Features</a></li>
+            <li><a href="#article">Articles</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#feature">Features</a></li>
             <li class="links"><a href="">Other Links</a></li>
           </ul>
         </nav>
@@ -52,12 +51,12 @@
         <div class="img">
           <img src="images/landing-image.png" alt="" />
         </div>
+        <a href="#article"><i class="fa-solid fa-angles-down"></i></a>
       </div>
-      <a href=""><i class="fa-solid fa-chevrons-down"></i></a>
     </div>
     <!-- End landing -->
     <!-- Start Articles -->
-    <article>
+    <article id="article">
       <div class="container">
         <div class="main-heading">
           <h2>Articles</h2>
@@ -545,5 +544,43 @@
       </div>
     </div>
     <!-- End Services -->
+    <!-- Start Skills -->
+    <div class="skills">
+      <div class="container">
+        <div class="main-heading">
+          <h2>our skills</h2>
+        </div>
+        <div class="content">
+          <img src="images/skills.png" alt="" />
+          <div class="content-skill">
+            <div class="prog-holder">
+              <h4>HTML <span>80%</span></h4>
+              <div class="prog">
+                <span style="width: 80%" data-progress="80%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>CSS<span>85%</span></h4>
+              <div class="prog">
+                <span style="width: 85%" data-progress="85%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>JavaScript<span>70%</span></h4>
+              <div class="prog">
+                <span style="width: 70%" data-progress="70%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>Python<span>80%</span></h4>
+              <div class="prog">
+                <span style="width: 80%" data-progress="80%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
   </body>
 </html>
