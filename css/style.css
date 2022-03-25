@@ -988,7 +988,7 @@ article .article-content .box a::after {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.stat .heading h2{
+.stat .heading h2 {
   position: relative;
   font-size: 35px;
   margin-bottom: 50px;
@@ -1003,14 +1003,14 @@ article .article-content .box a::after {
   padding: 30px;
   margin: 10px;
 }
-.stat .content .box i{
+.stat .content .box i {
   font-size: 30px;
 }
-.stat .content .box h2{
+.stat .content .box h2 {
   font-size: 50px;
   margin: 10px 0;
 }
-.stat .content .box p{
+.stat .content .box p {
   font-size: 20px;
   color: var(--main-color);
   font-weight: 600;
@@ -1018,3 +1018,108 @@ article .article-content .box a::after {
 }
 
 /* End Stats */
+/* Start Discount */
+.discount {
+}
+.discount .content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  text-align: center;
+  flex-wrap: wrap;
+  /* gap: 10%; */
+  
+}
+.discount .content .discount-content {
+  flex-basis: 50%;
+  flex: 1;
+  padding: 0 10px;
+  padding-top: 50px;
+  max-width: 500;
+  background-image: url("/images/discount-background1.jpg");
+  background-size: cover;
+  position: relative;
+}
+.discount .content .discount-content::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(23 135 224 / 97%);
+  
+}
+.discount .content .discount-content h2 {
+  font-size: 40px;
+  color: white;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+.discount .content .discount-content p {
+  font-size: 18px;
+  color: #f3f9fe;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.discount .content .discount-content img {
+  height: 300px;
+  position: relative;
+  bottom: 0px;
+  max-width: 100%;
+}
+.discount .content .discount-form {
+  flex-basis: 50%;
+  flex: 1;
+  padding: 0 10px;
+  padding-top: 50px;
+
+}
+.discount .content .discount-form h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.discount .content .discount-form form {
+  flex-direction: column;
+  display: flex;
+  /* padding: 100px; */
+  /* justify-content: center; */
+  align-items: center;
+}
+.discount .content .discount-form form input,textarea{
+  padding: 15px;
+  width: 340px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cecdcd;
+  outline: none;
+  border-color:transparent transparent #cecdcd transparent ;
+  background-color: #F9F9F9;
+}
+.discount .content .discount-form form input[type='text'] {
+}
+.discount .content .discount-form form[type='email'] {
+}
+.discount .content .discount-form form[type='tel'] {
+}
+.discount .content .discount-form form textarea {
+  width: 340px;
+  height: 200px;
+  resize: none;
+  box-sizing: border-box;
+}
+.discount .content .discount-form form	[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width:992px) {
+  .discount .content{
+    flex-direction: column;
+  }
+}
+/* End Discount */
