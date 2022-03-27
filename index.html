@@ -24,19 +24,60 @@
   </head>
   <body>
     <!-- Start Header -->
-    <header class="header" id="header">
+    <div class="header" id="header">
       <div class="container">
-        <a href="#">Elzero</a>
-        <nav class="nav">
-          <ul>
-            <li><a href="#article">Articles</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#feature">Features</a></li>
-            <li class="links"><a href="">Other Links</a></li>
-          </ul>
-        </nav>
+        <a href="#" class="logo">Elzero</a>
+        <ul class="main-nav">
+          <li><a href="#article">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li>
+            <a href="#">Other Links</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="images/megamenu.png" alt="" />
+              </div>
+              <ul class="links">
+                <li>
+                  <a href="#testimonial"><i class="far fa-comments fa-fw"></i> Testimonials</a>
+                </li>
+                <li>
+                  <a href="#members"><i class="far fa-user fa-fw"></i> Team Members</a>
+                </li>
+                <li>
+                  <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
+                </li>
+                <li>
+                  <a href="#skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
+                </li>
+                <li>
+                  <a href="#work"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
+                </li>
+                <li>
+                  <a href="#plan"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                </li>
+                <li>
+                  <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
+                </li>
+                <li>
+                  <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
+                </li>
+                <li>
+                  <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Megamenu -->
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
     <!-- End Header -->
     <!-- Start Landing -->
     <div class="landing">
@@ -51,7 +92,10 @@
         <div class="img">
           <img src="images/landing-image.png" alt="" />
         </div>
-        <a href="#article"><i class="fa-solid fa-angles-down"></i></a>
+
+        <a href="#article" class="go-down"
+          ><i class="fa-solid fa-angles-down"></i
+        ></a>
       </div>
     </div>
     <!-- End landing -->
@@ -230,7 +274,7 @@
     </div>
     <!-- End Features -->
     <!-- Start Testimonial -->
-    <div class="testimonial">
+    <div class="testimonial" id="testimonial">
       <div class="container">
         <div class="main-heading">
           <h2>testimonials</h2>
@@ -361,7 +405,7 @@
     </div>
     <!-- End Testimonial -->
     <!-- Start Team Members -->
-    <div class="members">
+    <div class="members" id="members">
       <div class="container">
         <div class="main-heading">
           <h2>TEAM MEMBERS</h2>
@@ -492,7 +536,7 @@
     </div>
     <!-- End Team Members -->
     <!-- Start Services -->
-    <div class="service">
+    <div class="service" id="services">
       <div class="container">
         <div class="main-heading">
           <h2>Services</h2>
@@ -545,7 +589,7 @@
     </div>
     <!-- End Services -->
     <!-- Start Skills -->
-    <div class="skills">
+    <div class="skills" id="skills">
       <div class="container">
         <div class="main-heading">
           <h2>our skills</h2>
@@ -583,7 +627,7 @@
     </div>
     <!-- End Skills -->
     <!-- Start HOW IT WORKS -->
-    <div class="work">
+    <div class="work" id="work">
       <div class="main-heading">
         <h2>How it Works?</h2>
       </div>
@@ -631,7 +675,7 @@
     </div>
     <!-- End HOW IT WORKS -->
     <!-- Start Events -->
-    <div class="event">
+    <div class="event" id="events">
       <div class="container">
         <div class="main-heading">
           <h2>LATEST EVENTS</h2>
@@ -679,7 +723,7 @@
     </div>
     <!-- End Events -->
     <!-- Start Plan -->
-    <div class="plan">
+    <div class="plan" id="plan">
       <div class="container">
         <div class="main-heading">
           <h2>PRICING PLANS</h2>
@@ -736,7 +780,7 @@
     </div>
     <!-- End Plan -->
     <!-- Start Videos -->
-    <div class="video">
+    <div class="video" id="video">
       <div class="main-heading">
         <h2>TOP VIDEOS</h2>
       </div>
@@ -784,7 +828,7 @@
     </div>
     <!-- End Videos -->
     <!-- Start Stats -->
-    <div class="stat">
+    <div class="stat" id="stats">
       <div class="container">
         <div class="heading">
           <h2>Our Awesome Stats</h2>
@@ -815,7 +859,7 @@
     </div>
     <!-- End Stats -->
     <!-- Start Discount -->
-    <div class="discount">
+    <div class="discount" id="discount">
       <div class="content">
         <div class="discount-content">
           <h2>We Have A Discount</h2>
@@ -845,7 +889,7 @@
     </div>
     <!-- End Discount -->
     <!-- Start Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="container">
         <div class="footer-content">
           <div class="section-one">
@@ -870,25 +914,32 @@
             </ul>
           </div>
           <div class="contact">
-            <p><i class="fa-solid fa-location-dot"></i>Egypt, Giza, Inside The Sphinx, Room Number 220</p><br>
-            <p><i class="fa-solid fa-clock"></i>
-              Business Hours: From 10:00 To 18:00</p><br>
-              <p><i class="fa-solid fa-phone"></i>+20123456789<br>
-                +20198765432</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Egypt, Giza, Inside The
+              Sphinx, Room Number 220
+            </p>
+            <br />
+            <p>
+              <i class="fa-solid fa-clock"></i> Business Hours: From 10:00 To
+              18:00
+            </p>
+            <br />
+            <p>
+              <i class="fa-solid fa-phone"></i>+20123456789<br />
+              +20198765432
+            </p>
           </div>
           <div class="img">
-            <img src="images/gallery-01.png" alt="">
-            <img src="images/gallery-02.png" alt="">
-            <img src="images/gallery-03.jpg" alt="">
-            <img src="images/gallery-04.png" alt="">
-            <img src="images/gallery-05.jpg" alt="">
-            <img src="images/gallery-06.png" alt="">
+            <img src="images/gallery-01.png" alt="" />
+            <img src="images/gallery-02.png" alt="" />
+            <img src="images/gallery-03.jpg" alt="" />
+            <img src="images/gallery-04.png" alt="" />
+            <img src="images/gallery-05.jpg" alt="" />
+            <img src="images/gallery-06.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="copyright">
-        Made With >3 By Elzero
-      </div>
+      <div class="copyright">Made With >3 By Elzero</div>
     </div>
     <!-- End Footer -->
   </body>
